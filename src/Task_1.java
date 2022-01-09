@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
 public class Task_1 {
-    public static int resistor(int in){
-        int sum;
-        sum = in;
+    public static int resistor(int current_resistance){
+        int sum = current_resistance;
+        Scanner input = new Scanner(System.in);
         for(int i = 1; i < 6; i++){
-            Scanner input = new Scanner(System.in);
-            in = input.nextInt();
-            sum = sum +in;
+            current_resistance = input.nextInt();
+            sum = sum + current_resistance;
         }
         return sum;
     }
