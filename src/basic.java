@@ -10,6 +10,7 @@ public class basic {
             System.out.println("Задание № 2");
             System.out.println("Задание № 3");
             System.out.println("Задание № 4");
+            System.out.println("Задание № 5");
             System.out.println("Для выхода нажмите 9");
             choice = input.nextInt();
             switch (choice) {
@@ -36,6 +37,11 @@ public class basic {
                     int evaluate = input.nextInt();
                     evaluate = Task_4.Evaluate_five(evaluate);
                     System.out.println("Количество пятерок: " + evaluate);
+                }
+                case 5-> {
+                    System.out.println("Введите рост ученика: ");
+                    double height = input.nextDouble();
+                    Task_5.height_avg(height);
                 }
             }
         }while (choice != 9);
