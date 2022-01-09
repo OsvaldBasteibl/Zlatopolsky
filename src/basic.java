@@ -1,7 +1,8 @@
+import java.io.*;
 import java.util.Scanner;
 
 public class basic {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         Scanner input = new Scanner(System.in);
         int choice;
         do {
@@ -11,6 +12,7 @@ public class basic {
             System.out.println("Задание № 3");
             System.out.println("Задание № 4");
             System.out.println("Задание № 5");
+            System.out.println("Задание № 6");
             System.out.println("Для выхода нажмите 9");
             choice = input.nextInt();
             switch (choice) {
@@ -42,6 +44,13 @@ public class basic {
                     System.out.println("Введите рост ученика: ");
                     double height = input.nextDouble();
                     Task_5.height_avg(height);
+                }
+                case 6 -> {
+                    System.out.println("Введите имя файла: ");
+                    String name;
+                    name = input.next();
+                    int distance = Task_6.min_distance(name);
+                    System.out.println("Минимальное расстояние от Москвы до другого города равно: " + distance);
                 }
             }
         }while (choice != 9);
