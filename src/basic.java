@@ -9,6 +9,7 @@ public class basic {
             System.out.println("Задание № 1");
             System.out.println("Задание № 2");
             System.out.println("Задание № 3");
+            System.out.println("Задание № 4");
             System.out.println("Для выхода нажмите 9");
             choice = input.nextInt();
             switch (choice) {
@@ -29,6 +30,12 @@ public class basic {
                     int rainFallInMonth = input.nextInt();
                     rainFallInMonth = Task_3.rainfall(rainFallInMonth);
                     System.out.println("Общее количество осадков в четных месяцах: " + rainFallInMonth);
+                }
+                case 4-> {
+                    System.out.println("Введите оценку ученика: ");
+                    int evaluate = input.nextInt();
+                    evaluate = Task_4.Evaluate_five(evaluate);
+                    System.out.println("Количество пятерок: " + evaluate);
                 }
             }
         }while (choice != 9);
